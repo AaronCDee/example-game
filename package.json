@@ -2,8 +2,11 @@
   "name": "example-game",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://aaroncdee.github.io/example-game/",
   "type": "module",
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy" : "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
